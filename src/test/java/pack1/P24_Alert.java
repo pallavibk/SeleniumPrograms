@@ -12,7 +12,7 @@ public class P24_Alert {
 		System.out.println("shri sai");
 		System.out.println("OMsai");
 		System.setProperty("webdriver.chrome.driver",
-				"C:\\Programs\\ChromeDriver\\chromedriver_win32\\chromedriver.exe");
+				"C:\\Users\\somapurshiva\\Automation\\Driver\\chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
 		// Alert Message handling
 		
@@ -23,15 +23,14 @@ public class P24_Alert {
         String alertmessage=driver.switchTo().alert().getText();
         System.out.println(alertmessage);
         alert.accept();
-        
-        
+             
         driver.findElement(By.name("cusid")).sendKeys("12345");
         driver.findElement(By.name("submit")).click();
         driver.switchTo().alert();
         alert.dismiss();
         
       
-      
+    
      	      	
 
 	}

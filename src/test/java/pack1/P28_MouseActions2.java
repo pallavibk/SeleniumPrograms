@@ -11,7 +11,7 @@ public class P28_MouseActions2 {
 	public static void main(String[] args) throws InterruptedException {
 	
 		System.setProperty("webdriver.chrome.driver",
-				"C:\\Programs\\ChromeDriver\\chromedriver_win32\\chromedriver.exe");
+				"C:\\Users\\somapurshiva\\Automation\\Driver\\chromedriver.exe");
 		WebDriver driver = new ChromeDriver();			
         		Actions actions=new Actions(driver);
 	   	        

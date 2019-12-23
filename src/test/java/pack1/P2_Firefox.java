@@ -11,8 +11,10 @@ public class P2_Firefox {
 	public static void main(String[] args) {
 		System.out.println("shri sai");
 		System.out.println("OMsai");
-		System.setProperty("webdriver.firefox.marionette",
-				"C:\\Programs\\GekoDriver\\geckodriver-v0.24.0-win64\\GekoDriver.exe");
+		//System.setProperty("webdriver.firefox.marionette",
+				//"C:\\Programs\\GekoDriver\\geckodriver-v0.24.0-win64\\GekoDriver.exe");
+				System.setProperty("webdriver.firefox.marionette",
+						"C:\\Users\\somapurshiva\\Automation\\All donloads\\GekoDriver.exe");
 		WebDriver driver = new FirefoxDriver();
 
 		driver.get("http://newtours.demoaut.com/");

@@ -19,7 +19,7 @@ public class P26_MouseActions {
 		//right click
 		Actions actions=new Actions(driver);
 		driver.get("http://demoqa.com/tooltip-and-double-click/");
-		WebElement ele1=	driver.findElement(By.id("rightClickBtn"));
+		WebElement ele1=driver.findElement(By.id("rightClickBtn"));
 		actions.contextClick(ele1).build().perform();
 		
 		//double click

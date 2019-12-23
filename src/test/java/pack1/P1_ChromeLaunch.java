@@ -13,7 +13,7 @@ public class P1_ChromeLaunch {
 		System.out.println("shri sai");
 		System.out.println("OMsai");
 		System.setProperty("webdriver.chrome.driver",
-				"C:\\Programs\\ChromeDriver\\76\\chromedriver.exe");
+				"C:\\Users\\somapurshiva\\Automation\\Driver\\chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
 	    
 		//1) program to differentiate between get() and navigate();
@@ -30,6 +30,8 @@ public class P1_ChromeLaunch {
 		driver.navigate().back();
         driver.navigate().forward();
         driver.navigate().refresh();
+        
+        driver.quit();
 		
     }
 }

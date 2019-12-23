@@ -16,7 +16,7 @@ public class P11_singleDropDown {
 		driver.get("https://www.toolsqa.com/automation-practice-form");
 		WebElement ele=driver.findElement(By.xpath("//select[@id='continents']"));
 		Select obj= new Select(ele);
-	    List<WebElement> allopt=	obj.getOptions();
+	    List<WebElement> allopt=obj.getOptions();
 	    for(int i=0;i<allopt.size();i++)
 	     {
 		String el=allopt.get(i).getText();

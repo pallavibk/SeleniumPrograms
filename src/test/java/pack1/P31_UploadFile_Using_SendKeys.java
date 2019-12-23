@@ -9,7 +9,7 @@ public class P31_UploadFile_Using_SendKeys {
 
 	public static void main(String[] args) {
 		System.setProperty("webdriver.chrome.driver",
-				"C:\\Programs\\ChromeDriver\\chromedriver_win32\\chromedriver.exe");
+				"C:\\Users\\somapurshiva\\Automation\\Driver\\chromedriver.exe");
 		WebDriver driver = new ChromeDriver();			
 		 driver.manage().window().maximize();	
         //Launching the site.				
@@ -17,7 +17,7 @@ public class P31_UploadFile_Using_SendKeys {
 		 //Locating 'browse' button
 		 WebElement browse =driver.findElement(By.id("uploadfile"));
 		 //pass the path of the file to be uploaded using Sendkeys method
-		 browse.sendKeys("C:\\Users\\somapurshiva\\Desktop\\test.txt");
+		 browse.sendKeys("C:\\Users\\somapurshiva\\Downloads\\xmlcodefortestng.txt");
 		 //'close' method is used to close the browser window
 		 driver.close();
 		 

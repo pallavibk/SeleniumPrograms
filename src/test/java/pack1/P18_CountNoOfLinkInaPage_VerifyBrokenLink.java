@@ -18,7 +18,7 @@ public class P18_CountNoOfLinkInaPage_VerifyBrokenLink {
 		System.out.println("shri sai");
 		System.out.println("OMsai");
 		System.setProperty("webdriver.chrome.driver",
-				"C:\\Programs\\ChromeDriver\\chromedriver_win32\\chromedriver.exe");
+				"C:\\Users\\somapurshiva\\Automation\\Driver\\chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
 	    
 		driver.manage().window().maximize();
@@ -36,6 +36,7 @@ public class P18_CountNoOfLinkInaPage_VerifyBrokenLink {
 		for(int i=0;i<alllinks.size();i++)
 		{
 			WebElement ele=alllinks.get(i);
+			//System.out.println(ele);
 			//By using "href" attribute, we could get the url of the requried link
 			String url=ele.getAttribute("href");
 			VerifyURL(url);

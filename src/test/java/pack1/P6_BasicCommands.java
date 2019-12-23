@@ -8,7 +8,7 @@ public class P6_BasicCommands {
 
 	public static void main(String[] args) {
 		System.setProperty("webdriver.chrome.driver",
-				"C:\\Programs\\ChromeDriver\\chromedriver_win32\\chromedriver.exe");
+				"C:\\Users\\somapurshiva\\Automation\\Driver\\chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
 		
 		

@@ -11,7 +11,7 @@ public class P25_Popup_Window_Hadling {
 
 	public static void main(String[] args) {
 		System.setProperty("webdriver.chrome.driver",
-				"C:\\Programs\\ChromeDriver\\chromedriver_win32\\chromedriver.exe");
+				"C:\\Users\\somapurshiva\\Automation\\Driver\\chromedriver.exe");
 		WebDriver driver = new ChromeDriver();			
         		
         //Launching the site.				
@@ -30,10 +30,12 @@ public class P25_Popup_Window_Hadling {
     		   driver.findElement(By.name("emailid")).click();
     	        driver.findElement(By.name("emailid")).sendKeys("gaurav.3n@gmail.com");
     	        driver.findElement(By.name("btnLogin")).click();
-    	        driver.close();
+    	       // driver.close();
     	   }
     	  
        }
-       driver.switchTo().window(Parent_WindoW);    
+       driver.switchTo().window(Parent_WindoW);  
+       driver.quit();
    }
+	
 }

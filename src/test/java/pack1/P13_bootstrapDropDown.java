@@ -17,14 +17,13 @@ public class P13_bootstrapDropDown {
 		List<WebElement> list=driver.findElements(By.xpath("//ul[@class='dropdown-menu']//li/a"));
 		for(int i=0;i<list.size();i++)
 		{
-			WebElement ele=list.get(i);
+		WebElement ele=list.get(i);
 		String inner_html=	list.get(i).getAttribute("innerHTML");
 		if(inner_html.contains("JavaScript"))
 		{
 			ele.click();
 		}
-		
-		}
+	  }
 		
 	}
 

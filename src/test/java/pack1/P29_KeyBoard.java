@@ -11,19 +11,21 @@ public class P29_KeyBoard {
 	public static void main(String[] args) {
 	
 		System.setProperty("webdriver.chrome.driver",
-				"C:\\Programs\\ChromeDriver\\chromedriver_win32\\chromedriver.exe");
+				"C:\\Users\\somapurshiva\\Automation\\Driver\\chromedriver.exe");
 		WebDriver driver = new ChromeDriver();			
         		
         //Launching the site.				
         driver.get("https://demoqa.com/autocomplete/");			
         driver.manage().window().maximize();
-		Actions actions=new Actions(driver);
+		Actions action=new Actions(driver);
 	    WebElement ele=	driver.findElement(By.xpath("//input[@class='ui-autocomplete-input']"));
-		actions.keyDown(ele, Keys.SHIFT).sendKeys("PALLAVI").keyUp(Keys.SHIFT).build().perform();
-		actions.sendKeys(Keys.SPACE);
-		actions.sendKeys("kundagol").build().perform();
+	    action.keyDown(ele, Keys.SHIFT).sendKeys("PALLAVI").keyUp(Keys.SHIFT).build().perform();
+	    action.sendKeys(Keys.SPACE);
+	    action.sendKeys("kundagol").build().perform();
 	    //actions.sendKeys(Keys.TAB);
 		//actions.sendKeys(Keys.ENTER);
-		driver.close();
+	    action.keyDown(ele, Keys.CONTROL).sendKeys("a").keyDown(ele, Keys.CONTROL).sendKeys("c").build().perform();
+		
+		//driver.close();
 	}
 }

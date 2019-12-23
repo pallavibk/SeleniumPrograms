@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="9523" started-at="2019-09-17T05:33:00 GMT" finished-at="2019-09-17T05:33:09 GMT">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="9523" started-at="2019-09-17T05:33:00 GMT" finished-at="2019-09-17T05:33:09 GMT">
+      <class name="pack1.P36_Scroll">
+        <test-method status="PASS" signature="scrollingToBottomofAPage()[pri:1, instance:pack1.P36_Scroll@1d16f93d]" name="scrollingToBottomofAPage" duration-ms="9467" started-at="2019-09-17T05:33:00 GMT" finished-at="2019-09-17T05:33:09 GMT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- scrollingToBottomofAPage -->
+      </class> <!-- pack1.P36_Scroll -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

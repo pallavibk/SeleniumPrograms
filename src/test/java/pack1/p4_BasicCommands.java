@@ -9,29 +9,30 @@ public class p4_BasicCommands {
 
 	public static void main(String[] args) {
 		System.setProperty("webdriver.chrome.driver",
-				"C:\\Programs\\ChromeDriver\\chromedriver_win32\\chromedriver.exe");
+				"C:\\Users\\somapurshiva\\Automation\\Driver\\chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
 		
-		System.out.println(driver.getCurrentUrl());
+		System.out.println("current URL="+driver.getCurrentUrl());
 		driver.get("http://newtours.demoaut.com/");
 		
 		//3
-		 System.out.println(driver.getCurrentUrl());
+		 System.out.println("Current URL="+driver.getCurrentUrl());
 		 
 		 //4
-	       System.out.println(driver.getTitle());
+	       System.out.println("Title="+driver.getTitle());
 	       
 	       //5 
-	        System.out.println(driver.getPageSource());
+	        System.out.println("Page source="+driver.getPageSource());
 	        
-	        
-	        //8
-	        
-	  System.out.println( driver.findElement(By.name("login")).getAttribute("value")); 
-	  System.out.println( driver.findElement(By.name("login")).getText());
-	  System.out.println( driver.findElement(By.name("login")).getAttribute("name")); 
-	  System.out.println( driver.findElement(By.name("login")).getAttribute("type"));
-	  System.out.println( driver.findElement(By.xpath("//a[ contains(text(),'REGISTER')]")).getText());
+	    
+	     //8
+	     System.out.println("*******************");
+	     System.out.println( driver.findElement(By.name("login")).getAttribute("value")); 
+	     System.out.println( driver.findElement(By.name("login")).getText());
+	     System.out.println( driver.findElement(By.name("login")).getAttribute("name")); 
+	     System.out.println( driver.findElement(By.name("login")).getAttribute("type"));
+	     System.out.println( driver.findElement(By.name("login")).getAttribute("alt"));
+	     System.out.println( driver.findElement(By.xpath("//a[ contains(text(),'REGISTER')]")).getText());
 	
 	  
 	 
